@@ -1,0 +1,11 @@
+version: '3'
+services:
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/front
+    command: sh -c "cd trial-vuex && npm run dev"
+    ports:
+        - "3300:5173"
