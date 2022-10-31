@@ -3,4 +3,4 @@ import './style.css'
 import App from './App.vue'
 import store from './store.js'
 
-createApp(App).mount('#app')
+const app = createApp(App).use(store).mount('#app')

@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex'
 
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
-  state: {
-
+const store = createStore({
+  state() {
+    return {
+      message: 'the message in vuex',
+      counter: 0,
+    }
   },
   mutations: {
 
@@ -13,6 +13,6 @@ const store = new Vuex.Store({
   actions: {
 
   },
-})  
+})
 
 export default store

@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:.
-    command: sh -c "cd vite-project && npm run dev"
+      - .:/front
+    command: sh -c "cd trial-vuex && npm run dev"
     ports:
-        - "3003:5173"
+        - "3300:5173"
